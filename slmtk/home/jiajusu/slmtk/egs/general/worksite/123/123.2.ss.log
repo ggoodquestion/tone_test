@@ -1,0 +1,34 @@
+echo addpath\(\'/home/jiajusu/slmtk/programs/dp/segrefine/\'\)\; >> /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/dp_segrefine.m
+rm: 無法刪除 '/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att': 沒有此一檔案或目錄
+rm: 無法刪除 '/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att_tmp': 沒有此一檔案或目錄
+sh /home/jiajusu/slmtk/programs//dp/segrefine/mkatt/mkatt.sh /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/wav16k /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att /home/jiajusu/slmtk/programs/dp/segrefine/mkatt/out_E120_dnn.pkl  /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att_tmp 10 0 0
+mkdir: 無法建立 「/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att_tmp」 目錄: 檔案已存在
+mkdir: 無法建立 「/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att」 目錄: 檔案已存在
+/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/wav16k/s11501.wav /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att_tmp/folder//s11501.wav
+/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att_tmp/folder//s11501.wav 
+    -> /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att_tmp/folder//s11501.mfc 
+
+ total frame in this set: 1227
+att
+Use CPU
+echo segrefine\(\'/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/lab/s11501.lab\',\'/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/att/s11501.att\', \'HMM2Att.txt\', \'AttState.txt\', \'/home/jiajusu/slmtk/egs/general/worksite/123/intermediate/lab_segrefine/s11501.lab\'\)\; >> /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/dp_segrefine.m
+/usr/local/MATLAB/R2020b/bin//matlab -nodesktop < /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/dp_segrefine.m
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                R2020b Update 4 (9.9.0.1570001) 64-bit (glnxa64)
+                                                                                January 7, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> proceesing /home/jiajusu/slmtk/egs/general/worksite/123/intermediate/lab/s11501.lab
+{Error using fprintf
+Invalid file identifier. Use fopen to generate a valid file identifier.
+
+Error in segrefine (line 110)
+    fprintf(fid, '%d %d %s %s %s\n', bt_att(i), et_att(i), att_att{i}, hmm_att{i}, word_att{i});
+} 
+>> 
